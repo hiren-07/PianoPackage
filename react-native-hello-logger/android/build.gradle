@@ -1,0 +1,46 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:4.2.2")
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+    namespace 'com.hellologger'  
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+//compileOptions {
+//    sourceCompatibility JavaVersion.VERSION_1_8
+//    targetCompatibility JavaVersion.VERSION_1_8
+//}
+repositories {
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    implementation 'com.facebook.react:react-native:+'
+        implementation group: 'io.piano.android', name: 'id', version: '2.7.0'
+//    implementation group: 'io.piano.android', name: 'api', version: '2.7.0'
+//    implementation group: 'io.piano.android', name: 'oauth', version: '2.7.0'
+    implementation group: 'io.piano.android', name: 'composer', version: '2.7.0'
+    implementation group: 'io.piano.android', name: 'composer-show-template', version: '2.7.0'
+    implementation group: 'io.piano.android', name: 'id-oauth-facebook', version: '2.7.0'
+    implementation group: 'io.piano.android', name: 'id-oauth-google', version: '2.7.0'
+}

@@ -1,0 +1,29 @@
+{
+  "name": "react-native-hello-logger",
+  "version": "1.0.0",
+  "description": "A simple React Native module to log 'Hello Native Module'",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "logger"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "apisauce": "^3.0.1"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.60.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/react-native-hello-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/react-native-hello-logger/issues"
+  },
+  "homepage": "https://github.com/yourusername/react-native-hello-logger#readme"
+}
